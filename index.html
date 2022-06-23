@@ -10,12 +10,13 @@
       <!-- 3DCGモデルを読み込む -->
       <a-assets>
         <a-asset-item id="robo" src="./assets/monpairobo.obj"></a-asset-item>
-        <a-asset-item id="mtl" src="./assets/monpairobo.mtl"></a-asset-item>      </a-assets>
+        <a-asset-item id="mtl" src="./assets/monpairobo.mtl"></a-asset-item>
+      </a-assets>
 
       <!-- マーカーの.pattファイルを読み込む -->
       <a-marker preset="hiro">
         <!-- 3Dモデルを呼び出す -->
-        <a-entity src="#robo" mtl="#mtl" position="0 0 1" scale="100 100 100" rotation="0 0 0"></a-entity>
+        <a-obj-model src="#robo" mtl="#mtl" scale=".1 .1 .1"></a-obj-model>
       </a-marker>
 
       <!-- カメラを追加 -->
